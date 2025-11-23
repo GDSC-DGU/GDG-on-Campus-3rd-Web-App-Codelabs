@@ -7,16 +7,12 @@
 이번 Activity 1에서는 **Google 계정으로 로그인 버튼 컴포넌트**를 직접 구현해보는 실습을 진행합니다.  
 Google Codelabs를 따라 구현해보고, 각자 사용 중인 기술 스택으로도 응용하여 만들어보는 것을 목표로 합니다.
 
----
-
 ## 📘 학습 목표
 
 - 웹페이지에 Google 계정으로 로그인 버튼 추가하기
 - OAuth 2.0 웹 애플리케이션 설정하기
 - ID 토큰 디코딩하기
 - Google 계정으로 로그인 버튼을 맞춤설정하기
-
----
 
 ## 🛠 진행 방법
 
@@ -27,14 +23,10 @@ Google Codelabs를 따라 구현해보고, 각자 사용 중인 기술 스택으
 📎 **실습 링크**  
 https://codelabs.developers.google.com/codelabs/sign-in-with-google-button?hl=ko#0
 
----
-
 ## 📤 제출 방법
 
 - **제출 마감:** 11월 10일(월)
 - **제출 방법:** README 참고
-
----
 
 ## 🌟 심화 과제(선택)
 
