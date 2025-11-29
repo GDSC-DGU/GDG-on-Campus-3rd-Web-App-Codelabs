@@ -22,7 +22,7 @@ Service Worker와 Cache Storage API를 활용하여, 네트워크 연결이 없�
 2. 구현 과정과 실행 화면(오프라인 테스트 포함)을 캡처하여 PR에 포함해주세요.
 
 📎 **실습 링크**  
-https://developers.google.com/codelabs/pwa-training/pwa03–going-offline?hl=ko#0
+https://developers.google.com/codelabs/pwa-training/pwa03--going-offline?hl=ko#0
 
 ## 🧱 심화 과제 (선택)
 
