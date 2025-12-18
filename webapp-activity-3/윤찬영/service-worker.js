@@ -14,9 +14,10 @@ Copyright 2021 Google LLC
  limitations under the License.
  */
 // Choose a cache name
-const cacheName = 'cache-v1';
+const cacheName = 'cache-v3';
 // List the files to precache
-const precacheResources = ['/', '/index.html', '/css/style.css', '/js/main.js', '/js/app/editor.js', '/js/lib/actions.js'];
+const precacheResources =
+     ['/', '/index.html', '/css/style.css', '/js/main.js', '/js/app/editor.js', '/js/lib/actions.js','/images/logo.svg', '/js/app/menu.js'];
 
 // When the service worker is installing, open the cache and add the precache resources to it
 self.addEventListener('install', (event) => {
