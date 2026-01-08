@@ -14,14 +14,40 @@
  limitations under the License.
  */
 
-window.addEventListener('DOMContentLoaded', async () => {
+// Register the service worker
+if ("serviceWorker" in navigator) {
+  // Wait for the 'load' event to not block other work
+  window.addEventListener("load", async () => {
+    // Try to register the service worker.
+    try {
+      // Capture the registration for later use, if needed
+      let reg;
+
+      // Use ES Module version of our Service Worker in development
+      if (import.meta.env?.DEV) {
+        reg = await navigator.serviceWorker.register("/service-worker.js", {
+          type: "module",
+        });
+      } else {
+        // In production, use the normal service worker registration
+        reg = await navigator.serviceWorker.register("/service-worker.js");
+      }
+
+      console.log("Service worker registered! 😎", reg);
+    } catch (err) {
+      console.log("😥 Service worker registration failed: ", err);
+    }
+  });
+}
+
+window.addEventListener("DOMContentLoaded", async () => {
   // Set up the editor
-  const { Editor } = await import('./app/editor.js');
+  const { Editor } = await import("./app/editor.js");
   const editor = new Editor(document.body);
 
   // Set up the menu
-  const { Menu } = await import('./app/menu.js');
-  new Menu(document.querySelector('.actions'), editor);
+  const { Menu } = await import("./app/menu.js");
+  new Menu(document.querySelector(".actions"), editor);
 
   // Set the initial state in the editor
   const defaultText = `# Welcome to PWA Edit!\n\nTo leave the editing area, press the \`esc\` key, then \`tab\` or \`shift+tab\`.`;
