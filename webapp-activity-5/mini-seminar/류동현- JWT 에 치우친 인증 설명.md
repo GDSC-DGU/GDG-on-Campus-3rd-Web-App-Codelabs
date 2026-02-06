@@ -50,7 +50,8 @@ signature=HMACSHA(Base64Url(Header)+’.’+Base64Url(Payload),SecretKey)
 > `eyJhbGci...[Header]`.`eyJ1c2Vy...[Payload]`.`SflKxwRJ...[Signature]`
 > 
 
-![image.png](%EB%A5%98%EB%8F%99%ED%98%84-%20JWT%20%EC%97%90%20%EC%B9%98%EC%9A%B0%EC%B9%9C%20%EC%9D%B8%EC%A6%9D%20%EC%84%A4%EB%AA%85/image.png)
+<img width="1836" height="86" alt="image" src="https://github.com/user-attachments/assets/7bd655cc-fc71-41b3-bdf6-e97e3b0d63d8" />
+
 
 **JWT방식을 사용한다고 했을 때 생각해 보아야 할 지점 → 로그아웃 처리는 어떻게?**
 
