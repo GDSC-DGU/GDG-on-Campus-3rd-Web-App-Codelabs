@@ -1,7 +1,3 @@
-
-https://velog.io/@enunsnv/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%8F%84%EA%B5%AC-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%8C%A8%EB%84%90-%ED%86%BA%EC%95%84%EB%B3%B4%EA%B8%B0
-
-
 ## GDGoC Web/App mini seminar #2 
 
 개발을 하다 보면
